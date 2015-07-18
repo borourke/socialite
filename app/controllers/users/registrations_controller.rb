@@ -9,7 +9,17 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # POST /resource
   # def create
-  #   super
+  #   build_resource(sign_up_params)
+  #   p "TESTING TESTING"
+  #   if resource.save
+  #     yield resource if block_given?
+  #     set_flash_message :notice, :"signed_up_but_#{resource.inactive_message}" if is_flashing_format?
+  #     expire_data_after_sign_in!
+  #     respond_with resource, location: after_inactive_sign_up_path_for(resource)
+  #   else
+  #     clean_up_passwords resource
+  #     respond_with resource
+  #   end
   # end
 
   # GET /resource/edit
@@ -36,7 +46,11 @@ class Users::RegistrationsController < Devise::RegistrationsController
   #   super
   # end
 
-  # protected
+  protected
+
+  # def after_sign_up_path_for(resource)
+  #   '/an/example/path' # Or :prefix_to_your_route
+  # end
 
   # If you have extra params to permit, append them to the sanitizer.
   # def configure_sign_up_params
@@ -48,13 +62,13 @@ class Users::RegistrationsController < Devise::RegistrationsController
   #   devise_parameter_sanitizer.for(:account_update) << :attribute
   # end
 
-  # The path used after sign up.
-  # def after_sign_up_path_for(resource)
-  #   super(resource)
-  # end
-
   # The path used after sign up for inactive accounts.
-  # def after_inactive_sign_up_path_for(resource)
-  #   super(resource)
-  # end
+  def after_inactive_sign_up_path_for(resource)
+    new_user_session_path
+  end
+
+  # The path used after sign up.
+  def after_sign_up_path_for(resource)
+    new_user_session_path
+  end
 end

@@ -14,6 +14,7 @@
   left:0;
   overflow:hidden;
   background: url('seamless-white-wood-textures.jpg');
+  z-index: -1;
 }
 
 .sign-title {
