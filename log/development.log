@@ -13572,3 +13572,169 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-17 19:50:13
 
 
 Started GET "/assets/chess.jpg" for 127.0.0.1 at 2015-07-17 19:50:13 -0700
+
+
+Started GET "/users/confirmation?confirmation_token=-sq694Jmz6yo6dpL-PsE" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+Processing by Users::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"-sq694Jmz6yo6dpL-PsE"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."confirmation_token" = 'c58fd687ecbd242ceeea9c1e88c15c34325cd4a980de79c806ef8a603085134a'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered users/shared/_links.html.erb (3.8ms)
+  Rendered users/confirmations/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 117ms (Views: 114.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/chess.jpg" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started GET "/assets/seamless-white-wood-textures.jpg" for 127.0.0.1 at 2015-07-17 19:59:59 -0700
+
+
+Started POST "/users/confirmation" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+Processing by Users::ConfirmationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5VTBG5WOdj0lnMVe5ju4HJeeL8oQdSBB0vn0qTsEHE4=", "user"=>{"email"=>"bryan.orourke24@gmail.com"}, "commit"=>"Resend confirmation instructions"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."unconfirmed_email" = 'bryan.orourke24@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'bryan.orourke24@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered users/shared/_links.html.erb (0.4ms)
+  Rendered users/confirmations/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 129ms (Views: 110.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
+
+
+Started GET "/assets/chess.jpg" for 127.0.0.1 at 2015-07-17 20:00:10 -0700
