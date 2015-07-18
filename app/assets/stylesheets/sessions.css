@@ -6,7 +6,7 @@
 }
 
 /* SIGN IN */
-#sign-in-form-col {
+.sign-form-col {
   border: 1px solid black;
   position: absolute;
   top:0;
@@ -16,23 +16,23 @@
   background: url('seamless-white-wood-textures.jpg');
 }
 
-#sign-in-title {
+.sign-title {
   margin-top: 25%;
   margin-bottom: 10%;
   text-align: center;
 }
 
-#sign-in-button {
+.sign-button {
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
 }
 
-#user_email, #user_password {
+#user_email, #user_password, #user_password_confirmation {
   width: 93%;
 }
 
-#sign-in-image-col {
+.sign-image-col {
   border: 1px solid black;
   position: absolute;
   top:0;
@@ -45,7 +45,7 @@
   z-index: -1;
 }
 
-#sign-in-image {
+.sign-image {
   height: 80%;
   margin-top: 8%;
   margin-bottom: 8%;

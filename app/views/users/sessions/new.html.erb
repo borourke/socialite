@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-4" id="sign-in-form-col">
-      <h2 id="sign-in-title">Welcome to Socialite</h2>
+    <div class="col-md-4 sign-form-col">
+      <h2 class="sign-title">Welcome to Socialite</h2>
   
       <%= simple_form_for(
         resource, 
@@ -19,7 +19,7 @@
         <%= f.input :email, required: false, autofocus: true %>
         <%= f.input :password, required: false %>
         <%= f.input :remember_me, as: :boolean %>
-        <%= f.button :submit, "Sign in", class: "btn btn-primary", id: "sign-in-button" %>
+        <%= f.button :submit, "Sign In", class: "btn btn-primary sign-button" %>
       <% end %>
 
       <div class="shared-links">
@@ -27,8 +27,8 @@
       </div>
     </div>
 
-    <div class="col-md-8" id="sign-in-image-col">
-      <img src="<%= image_path("chess.jpg")%>" id="sign-in-image" />
+    <div class="col-md-8 sign-image-col">
+      <img src="<%= image_path("chess.jpg")%>" class="sign-image" />
     </div>
   </div>
 </div>
