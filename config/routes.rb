@@ -1,6 +1,16 @@
 Rails.application.routes.draw do
-  # All feature pages need to be loaded in with a group ID in the beginning.
-  # The group ID determines what filter to apply to the corresponding feature model.
+  root to: "messages#index"
+
+  #
+  # DEVISE
+  #
+  devise_for :users, controllers: { 
+    sessions: "users/sessions",
+    confirmations: "users/confirmations",
+    passwords: "users/passwords",
+    registrations: "users/registrations",
+    unlocks: "users/unlocks"
+  }
 
   #
   # GROUPS
