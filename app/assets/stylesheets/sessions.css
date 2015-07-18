@@ -29,7 +29,7 @@
   margin-right: 5%;
 }
 
-#user_email, #user_password, #user_password_confirmation {
+#user_email, #user_password, #user_password_confirmation, #user_name {
   width: 93%;
 }
 
