@@ -15,3 +15,9 @@
 //= require twitter/bootstrap
 //= require turbolinks
 //= require_tree .
+
+window.setTimeout(function() {
+  $(".alert").fadeTo(200, 0).slideUp(200, function(){
+      $(this).remove();
+  });
+}, 5000);
