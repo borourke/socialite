@@ -12,4 +12,13 @@
  *
  *= require_tree .
  *= require_self
- */
+*/
+
+.navbar {
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+
+.nav-pills {
+  width: 80%;
+}

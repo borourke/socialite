@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Socialite</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>Socialite</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
   
-<% flash.each do |name, msg| %>
-  <%= content_tag :div, msg, class: "alert alert-#{name == 'notice' ? 'success' : 'danger'}" %>
-<% end %>
-
-<%= yield %>
-
-</body>
+    <% if current_user %>
+      <%= render 'layouts/navbar' %>
+    <% end %>
+    
+    <% flash.each do |name, msg| %>
+      <%= content_tag :div, msg, class: "alert alert-#{name == 'notice' ? 'success' : 'danger'}" %>
+    <% end %>
+  
+    <%= yield %>
+  
+  </body>
 </html>

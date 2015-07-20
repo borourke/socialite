@@ -16,5 +16,6 @@ Rails.application.routes.draw do
   # GROUPS
   #
   get 'groups/new', to: 'groups#new', as: 'new_group'
+  post 'groups/create', to: 'groups#create', as: 'create_new_group'
   get 'groups/invite_member', to: 'groups#invite_member', as: 'invite_member_to_group'
 end

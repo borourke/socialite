@@ -9,6 +9,8 @@ class ApplicationController < ActionController::Base
     strategy DecentExposure::StrongParametersStrategy
   end
 
+  expose(:action) { path[:action] }
+
   protected
 
   def configure_permitted_parameters
