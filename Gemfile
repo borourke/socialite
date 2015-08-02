@@ -22,3 +22,6 @@ gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: '
 gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'devise'
 gem "decent_exposure"
+gem 'faye-rails', '~> 2.0'
+gem 'thin'
+gem 'jquery-turbolinks'

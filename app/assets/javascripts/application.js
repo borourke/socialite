@@ -13,7 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require jquery.turbolinks
 //= require turbolinks
+//= require faye
+//= require messages
 //= require_tree .
 
 window.setTimeout(function() {
