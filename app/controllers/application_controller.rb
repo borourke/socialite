@@ -11,6 +11,8 @@ class ApplicationController < ActionController::Base
 
   expose(:action) { path[:action] }
 
+  expose(:current_group_id) { 1 }
+
   protected
 
   def configure_permitted_parameters
