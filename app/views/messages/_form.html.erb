@@ -1,0 +1,13 @@
+<div class="well" id="messages-form-well">
+  <%= simple_form_for(
+    message, 
+    url: new_message_path,
+    html: { class: "form-inline" }, 
+    remote: true
+    ) do |f| %>
+    <%= f.input :message, label: false %>
+    <%= f.input :author_id, as: :hidden, input_html: { value: current_user.id } %>
+    <%= f.input :group_id, as: :hidden, input_html: { value: current_group_id } %> 
+    <%= f.submit 'Message', class: 'btn btn-primary' %>
+  <% end %>
+</div>

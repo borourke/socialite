@@ -5,7 +5,7 @@ class MessagesController < ApplicationController
 
   expose(:message) { Message.new }
 
-  expose(:messages) { Message.order("created_at DESC") }
+  expose(:messages) { Message.order("created_at ASC") }
   
   def index
     # load all threads and messages for preferred group id, unless custom group id is defined

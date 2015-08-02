@@ -22,6 +22,6 @@ Rails.application.routes.draw do
   #
   # MESSAGES
   #
-
   post 'messages/create', to: 'messages#create', as: 'new_message'
+  get 'messages/index', to: 'messages#index', as: 'messages'
 end
