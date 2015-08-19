@@ -6,6 +6,10 @@ class MessagesController < ApplicationController
   expose(:message) { Message.new }
 
   expose(:messages) { Message.order("created_at ASC") }
+
+  expose(:topics) { Topic.order("created_at DESC") }
+
+  expose(:topic) { Topic.new }
   
   def index
     # load all threads and messages for preferred group id, unless custom group id is defined
@@ -22,6 +26,6 @@ class MessagesController < ApplicationController
   private
  
   def message_params
-    params.require(:message).permit(:message, :author_id, :group_id)
+    params.require(:message).permit(:message, :user_id, :group_id)
   end
 end

@@ -1,3 +1,3 @@
-<li>
-  <p><%= @message.message %></p>
+<li class="message">
+  <p><%= message.user ? message.user.name : "Wooops" %>: <%= message.message %></p>
 </li>

@@ -6,7 +6,7 @@
     remote: true
     ) do |f| %>
     <%= f.input :message, label: false %>
-    <%= f.input :author_id, as: :hidden, input_html: { value: current_user.id } %>
+    <%= f.input :user_id, as: :hidden, input_html: { value: current_user.id } %>
     <%= f.input :group_id, as: :hidden, input_html: { value: current_group_id } %> 
     <%= f.submit 'Message', class: 'btn btn-primary' %>
   <% end %>

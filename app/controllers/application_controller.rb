@@ -13,6 +13,8 @@ class ApplicationController < ActionController::Base
 
   expose(:current_group_id) { 1 }
 
+  expose(:group_names) { User.pluck(:name) }
+
   protected
 
   def configure_permitted_parameters

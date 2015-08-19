@@ -22,3 +22,16 @@
   margin-bottom: 56px;
   margin-top: 50px;
 }
+
+#messages-container {
+  border-left: 2px solid black;
+  height: 93.6vh;
+}
+
+.message {
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid silver;
+}
